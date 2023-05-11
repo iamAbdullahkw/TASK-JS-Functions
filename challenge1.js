@@ -33,16 +33,38 @@ printAge(1995)
  * -- fr: it should print `Bonjour NAME`
  * -- tr: it should print `Merhaba NAME`
  */
+
 function printHello (name, language) {
+   if ( language == 'ar' ) {
 
-   printHello ("MerhabaName");
+      console.log (`Merhaba ${name}`);
+   }
+   else if ( language == 'en' ) {
 
+      console.log (`Hello ${name}`);
+   }
+
+   else if ( language == 'es' ) {
+
+      console.log (`Hola ${name}`);
+
+   }
+   
+
+   else if ( language == 'fr' ) {
+
+      console.log (`Bonjour ${name}`);
+
+
+   }
 }
+
  
-console.log ("Merhaba Name")
-console.log ("Hello NAME")
-console.log ("Bonjour NAME")
-console.log ("Hola NAME")
+printHello("Abdullah", "ar")
+printHello("Abdullah", "en")
+printHello("Abdullah", "es")
+printHello("Abdullah", "fr")
+
 
 /**
  * 
@@ -58,6 +80,7 @@ function printMax (a, b) {
  }else{
     return b;
  }
+ 
 }
 
 console.log (printMax(85,80));
