@@ -80,9 +80,8 @@ function printMax (a, b) {
  }else{
     return b;
  }
- 
+
 }
 
 console.log (printMax(85,80));
-
 
